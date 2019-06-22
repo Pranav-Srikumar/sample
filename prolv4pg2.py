@@ -1,15 +1,15 @@
-a2,b2=map(int,input().split())
-if a2<=b2:
-  d=a2
+a1,b1=map(int,input().split())
+if a1<=b1:
+  d=a1
 else:
-  d=b2
-m=[]
+  d=b1
+c=[]
 for i in range(0,d):
-  m.append(sorted(list(map(int,input().split()))))
-m=sorted(m)
-for i in range(0,len(m[0])):
-  for j in range(0,len(m)-1):
-    if m[j][i]>m[j+1][i]:
-      m[j][i],m[j+1][i]=m[j+1][i],m[j][i]
-for i in m:
+  c.append(sorted(list(map(int,input().split()))))
+c=sorted(c)
+for i in range(0,len(c[0])):
+  for j in range(0,len(c)-1):
+    if c[j][i]>c[j+1][i]:
+      c[j][i],c[j+1][i]=c[j+1][i],c[j][i]
+for i in c:
   print(*i)
