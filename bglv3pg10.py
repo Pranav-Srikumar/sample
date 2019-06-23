@@ -1,0 +1,5 @@
+hour1,mint1=map(int,input().split())
+hour2,mint2=map(int,input().split())
+hour3=abs(hour1-hour2)
+mint3=abs(mint1-mint2)
+print(hour3,mint3)
