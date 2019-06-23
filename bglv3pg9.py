@@ -1,4 +1,4 @@
 num=int(input())
-hrs=num//60
-mins=num-(hrs*60)
-print(hrs,mins)
+hours=num//60
+mints=num-(hours*60)
+print(hours,mints)
